@@ -13,6 +13,10 @@
   --accent-strong: #e9e9f2;
   --accent-soft: rgba(255, 255, 255, 0.08);
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  --shadow-card-3d: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.3),
+    0 16px 32px rgba(0, 0, 0, 0.4), 0 32px 64px rgba(0, 0, 0, 0.2);
+  --shadow-card-3d-hover: 0 2px 4px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.4),
+    0 24px 48px rgba(0, 0, 0, 0.5), 0 48px 96px rgba(0, 0, 0, 0.3);
   --font-mono-stack: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
 }
@@ -36,6 +40,7 @@ body {
   color: var(--text);
   font-family: var(--font-body), "Sora", system-ui, sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1,
@@ -75,4 +80,37 @@ html.lang-ar h3 {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.08);
   color: var(--text);
+}
+
+/* Hero breakout — allows full-viewport-width inside a max-width container */
+.hero-breakout {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: -1rem;
+}
+
+/* Scroll hint animation */
+@keyframes scroll-hint {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(8px);
+  }
+}
+
+.animate-scroll-hint {
+  animation: scroll-hint 2s ease-in-out infinite;
+}
+
+/* Editorial product card — 3D layered shadows */
+.editorial-card {
+  box-shadow: var(--shadow-card-3d);
+}
+
+.editorial-card:hover {
+  box-shadow: var(--shadow-card-3d-hover);
 }

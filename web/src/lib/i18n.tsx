@@ -55,6 +55,15 @@ const dictionaries: Record<Language, Dictionary> = {
     "home.about":
       "Lumi Noir is a quiet statement of strength — modern abayas crafted for elegance and ease.",
     "home.footer": "Lumi Noir",
+    "home.editorial.tagline": "Where modern modesty meets elevated design.",
+    "home.editorial.cta": "SHOP NOW",
+    "home.collection.heading": "Our Collection",
+    "home.collection.empty": "No products yet. Check back soon.",
+    "admin.hero": "Hero Image",
+    "admin.hero.upload": "Upload Hero Image",
+    "admin.hero.current": "Current Hero Image",
+    "admin.hero.remove": "Remove",
+    "admin.hero.none": "No hero image uploaded. A black background will be shown.",
   },
   fr: {
     "nav.home": "Accueil",
@@ -108,6 +117,15 @@ const dictionaries: Record<Language, Dictionary> = {
     "home.about":
       "Lumi Noir est une signature discrète de force — des abayas modernes pour l’élégance et le confort.",
     "home.footer": "Lumi Noir",
+    "home.editorial.tagline": "L'\u00e9l\u00e9gance moderne au c\u0153ur du modest fashion.",
+    "home.editorial.cta": "ACHETER",
+    "home.collection.heading": "Notre Collection",
+    "home.collection.empty": "Aucun produit pour le moment. Revenez bient\u00f4t.",
+    "admin.hero": "Image Hero",
+    "admin.hero.upload": "T\u00e9l\u00e9charger l'image Hero",
+    "admin.hero.current": "Image Hero actuelle",
+    "admin.hero.remove": "Supprimer",
+    "admin.hero.none": "Aucune image hero. Un fond noir sera affich\u00e9.",
   },
   ar: {
     "nav.home": "الرئيسية",
@@ -156,6 +174,15 @@ const dictionaries: Record<Language, Dictionary> = {
     "home.about":
       "لومي نوير رسالة هادئة للقوة — عبايات عصرية تجمع الأناقة والراحة.",
     "home.footer": "Lumi Noir",
+    "home.editorial.tagline": "\u062d\u064a\u062b \u062a\u0644\u062a\u0642\u064a \u0627\u0644\u062d\u0634\u0645\u0629 \u0627\u0644\u0639\u0635\u0631\u064a\u0629 \u0628\u0627\u0644\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0631\u0627\u0642\u064a.",
+    "home.editorial.cta": "\u062a\u0633\u0648\u0642\u064a \u0627\u0644\u0622\u0646",
+    "home.collection.heading": "\u062a\u0634\u0643\u064a\u0644\u062a\u0646\u0627",
+    "home.collection.empty": "\u0644\u0627 \u062a\u0648\u062c\u062f \u0645\u0646\u062a\u062c\u0627\u062a \u0628\u0639\u062f. \u0639\u0648\u062f\u064a \u0642\u0631\u064a\u0628\u0627\u064b.",
+    "admin.hero": "\u0635\u0648\u0631\u0629 \u0627\u0644\u0648\u0627\u062c\u0647\u0629",
+    "admin.hero.upload": "\u0631\u0641\u0639 \u0635\u0648\u0631\u0629 \u0627\u0644\u0648\u0627\u062c\u0647\u0629",
+    "admin.hero.current": "\u0635\u0648\u0631\u0629 \u0627\u0644\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u062d\u0627\u0644\u064a\u0629",
+    "admin.hero.remove": "\u062d\u0630\u0641",
+    "admin.hero.none": "\u0644\u0627 \u062a\u0648\u062c\u062f \u0635\u0648\u0631\u0629 \u0648\u0627\u062c\u0647\u0629. \u0633\u064a\u0638\u0647\u0631 \u062e\u0644\u0641\u064a\u0629 \u0633\u0648\u062f\u0627\u0621.",
   },
 };
 

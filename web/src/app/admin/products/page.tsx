@@ -84,6 +84,12 @@ export default function AdminProductsPage() {
           <h1 className="text-3xl font-semibold">{t("admin.products")}</h1>
           <div className="flex flex-wrap gap-2">
             <Link
+              href="/admin/content/hero"
+              className="btn-ghost rounded-full px-4 py-2 text-sm"
+            >
+              {t("admin.hero")}
+            </Link>
+            <Link
               href="/admin/content/about"
               className="btn-ghost rounded-full px-4 py-2 text-sm"
             >

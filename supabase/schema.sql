@@ -128,6 +128,33 @@ to authenticated
 using (public.is_admin());
 
 
+-- SITE CONTENT (hero image, about text, etc.)
+create table if not exists public.site_content (
+  key  text not null,
+  lang text not null default 'en',
+  content text not null default '',
+  updated_at timestamptz default now(),
+  primary key (key, lang)
+);
+
+alter table public.site_content enable row level security;
+
+create policy "Public read site_content"
+on public.site_content for select
+using (true);
+
+create policy "Admin insert site_content"
+on public.site_content for insert
+to authenticated
+with check (public.is_admin());
+
+create policy "Admin update site_content"
+on public.site_content for update
+to authenticated
+using (public.is_admin())
+with check (public.is_admin());
+
+
 -- STORAGE POLICIES (create bucket 'product-images' in Supabase UI first)
 create policy "Public read product images"
 on storage.objects for select
